@@ -29,7 +29,7 @@ A responsive personal portfolio website built with **HTML5 & CSS3** for the PLP 
   
 ## 🛠 Development Phases
 - [x] create an informative README
-- [ ] Create base HTML structure
+- [x] Create the HTML structure
 - [ ] Set up and implement CSS 
 - [ ] test the functionality of all features
 - [ ] Deploy to vercel
