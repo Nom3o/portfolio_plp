@@ -1,0 +1,126 @@
+/* ===== Google Fonts Import ===== */
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&family=Playfair+Display:wght@400;500;600&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Lilita+One&display=swap');
+/* ===== CSS Variables ===== */
+:root {
+  --primary: #2563eb;
+  --primary-light: #3b82f6;
+  --dark: #1a202c;
+  --light: #f7fafc;
+  --accent: #ecc94b;
+  --gray: #718096;
+  --transition: all 0.4s cubic-bezier(0.25, 0.8, 0.25, 1);
+  --shadow-sm: 0 1px 3px rgba(0, 0, 0, 0.12);
+  --shadow-md: 0 4px 6px rgba(0, 0, 0, 0.1);
+  --shadow-lg: 0 10px 25px rgba(0, 0, 0, 0.1);
+  --border-radius: 8px;
+}
+
+/* ===== Base Styles ===== */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  font-family: 'Poppins', sans-serif;
+  line-height: 1.6;
+  color: var(--dark);
+  background-color: var(--light);
+  overflow-x: hidden;
+}
+
+h1, h2, h3 {
+  font-family: 'Playfair Display', serif;
+  font-weight: 600;
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+
+/* ===== Navbar ===== */
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1.5rem 5%;
+  background-color: rgba(255, 255, 255, 0.95);
+  backdrop-filter: blur(10px);
+  position: fixed;
+  width: 100%;
+  top: 0;
+  z-index: 1000;
+  box-shadow: var(--shadow-sm);
+  transition: var(--transition);
+}
+
+.navbar:hover {
+  box-shadow: var(--shadow-md);
+}
+
+.my_logo {
+  font-size: 35px;
+  font-family: "Lilita One", sans-serif;
+  font-weight: 700;
+  color: var(--dark);
+  letter-spacing: -0.5px;
+  transition: var(--transition);
+}
+
+.my_logo:hover {
+  transform: translateY(-2px);
+}
+
+.E {
+  color: var(--primary);
+  font-weight: 700;
+  font-size: 50px;
+}
+
+.dot {
+  color: var(--accent);
+  font-weight: 800;
+}
+
+.navbar ul {
+  display: flex;
+  gap: 2rem;
+  list-style: none;
+}
+
+.navbar a {
+  position: relative;
+  padding: 0.5rem 0;
+  font-weight: 500;
+  color: var(--gray);
+  transition: var(--transition);
+}
+
+.navbar a:hover,
+.navbar .active {
+  color: var(--dark);
+}
+
+.navbar a::after {
+  content: '';
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 0;
+  height: 2px;
+  background: linear-gradient(90deg, var(--primary), var(--accent));
+  transition: var(--transition);
+}
+
+.navbar a:hover::after,
+.navbar .active::after {
+  width: 100%;
+}

@@ -4,12 +4,13 @@
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
   <link rel="stylesheet" href="style.css" />
-  <title>Abel Mekuriya | Developer Portfolio</title>
+  
+  <title>portfolio</title>
 </head>
 <body>
   <!-- Navbar -->
   <nav class="navbar">
-    <a href="#" class="my_logo">Ab<span class="E">E</span>l <span class="dot">.</span></a>
+    <a href="#" class="my_logo">AB<span class="E">E</span>L<span class="dot"> .</span></a>
     <ul>
       <li class="active"><a href="#about">About Me</a></li>
       <li><a href="#education">Education</a></li>
@@ -26,7 +27,7 @@
       <div class="home_info">
         <h1>Abel Mekuriya</h1>
         <h2 class="developer">Developer</h2>
-        <p>Hi! I’m Abel Mekuriya, a passionate developer and tech enthusiast with a love for building secure, functional, and beautiful digital experiences.</p>
+        <p>Hi! I'm Abel Mekuriya, a passionate developer and tech enthusiast within hands on skills.</p>
       </div>
       <div class="my_image">
         <div class="img_box">
@@ -39,8 +40,15 @@
 <!--Educational Background Section-->
   <section class="section" id="education">
     <h2 class="section_title">Educational Background</h2>
-    <p>Software Engineering Student at ASTU</p>
-    <button> <a href="assets/cv.pdf" class="btn" download>Downlad CV</a></button>
+    <ul>
+    <li>Software Engineering Student at ASTU (currently)</li>
+    <li>Information Network Security Administration (INSA) in Cyber Security</li>
+    
+   </ul>
+   <div>
+    <button class="download_btn"><a href="assets/cv.pdf" class="btn" download>Downlad CV</a></button>
+   </div>
+    
 
 <!--Skills Section-->
 
@@ -72,43 +80,101 @@
 </section>
 
 <!--Project Section-->
+<!--In the below sections i provided a demo of the two projects i have made.-->
+
 <section class="section" id="projects">
   <h2 class="section_title">Projects</h2>
-
-  <ul>
-    <li>
-     <strong>
-        <a href="https://youtu.be/jnRkU4ICl_k" target="_blank">B3laR4T</a>
-      </strong>
-      - A remote access tool built with <strong>Flutter (Dart), C++, and Python</strong>, designed for both client and server sides. The server runs on a <strong>Kali Linux</strong> machine and includes features like accessing the PC camera, locking, sleeping, and shutting down the PC.
-      <br>
-      <img src="assets/rat.png" alt="B3laR4T Demo" width="300" style="margin-top: 10px; border-radius: 8px;">
-    </li>
-
-    <li>
-  <strong>
-    <a href="https://t.me/Besttext2imageAI_bot" target="_blank">Gizmo</a>
-  </strong>
-  - An AI-powered image search engine built as a <strong>Telegram Mini App</strong>. It generates images based on user input and allows users to preview and download them to their local device.
-  <br>
-  <img src="assets/gizmo.png" alt="Gizmo Demo" width="300" style="margin-top: 10px; border-radius: 8px;">
-</li>
-  </ul>
+  
+  <div class="projects-grid">
+    <!-- Project 1 -->
+    <div class="project-card">
+      <a href="https://youtu.be/jnRkU4ICl_k" target="_blank" class="project-link">
+        <div class="project-image">
+          <img src="assets/rat.png" alt="B3laR4T Demo">
+        </div>
+        <div class="project-content">
+          <h3 class="project-title">B3laR4T</h3>
+          <p class="project-description">A remote access tool using <strong>Flutter (Dart), C++, and Python</strong>, with a <strong>Kali Linux</strong> server, supporting camera access, lock, sleep, and shutdown features.</p>
+          <div class="project-tech">
+            <span class="tech-tag">Flutter</span>
+            <span class="tech-tag">C++</span>
+            <span class="tech-tag">Python</span>
+            <span class="tech-tag">Kali Linux</span>
+          </div>
+        </div>
+        <div class="project-hover-content">
+          <p><strong>Click here </strong> to watch the<strong>Demo</strong>.</strong></p>
+          <span class="view-project">View Demo</span>
+        </div>
+      </a>
+    </div>
+    
+    <!-- Project 2 -->
+    <div class="project-card">
+      <a href="https://t.me/Besttext2imageAI_bot" target="_blank" class="project-link">
+        <div class="project-image">
+          <img src="assets/gizmo.png" alt="Gizmo Demo">
+        </div>
+        <div class="project-content">
+          <h3 class="project-title">Gizmo</h3>
+          <p class="project-description">An AI-powered image search tool built with <strong>Telegram Mini App</strong> tech, allowing users to search, view, and download images instantly.</p>
+          <div class="project-tech">
+            <span class="tech-tag">Telegram API</span>
+            <span class="tech-tag">AI</span>
+            <span class="tech-tag">Image Generation</span>
+          </div>
+        </div>
+        <div class="project-hover-content">
+          <p><strong>Click here</strong> to try it on <strong>Telegram</strong></p>
+          <span class="view-project">View Project</span>
+        </div>
+      </a>
+    </div>
+  </div>
 </section>
 
-
-    <!--Contact Me Section-->
-  </section>
-   <form class="contact_form" method="post">
-     <label for="name">Name:</label>
-     <input type="text" id="name" name="name" placeholder="Enter your name">
-     <label for="email">Email:</label>
-     <input type="email" id="email" name="email" placeholder="youremail@gmail.com">
-
-     <label for="message">Message:</label>
-     <textarea name="message" id="message" placeholder="Type your message"></textarea>
-
-     <button type="submit">Send</button>
-   </form>
+<!-- Contact Me Section -->
+<section class="section" id="contact">
+  <h2 class="section_title">Get In Touch</h2>
+  
+  <form class="contact_form" method="post">
+    <div class="form-group">
+      <label for="name">Your Name</label>
+      <input 
+        type="text" 
+        id="name" 
+        name="name" 
+        placeholder="Enter your name"
+        required
+      >
+    </div>
+    
+    <div class="form-group">
+      <label for="email">Email Address</label>
+      <input 
+        type="email" 
+        id="email" 
+        name="email" 
+        placeholder="youremail@gmail.com"
+        required
+      >
+    </div>
+    
+    <div class="form-group">
+      <label for="message">Your Message</label>
+      <textarea 
+        name="message" 
+        id="message" 
+        placeholder="How can I help you?"
+        required
+      ></textarea>
+    </div>
+    
+    <button type="submit">
+      Send Message
+    </button>
+  </form>
+</section>
+   
 </body>
 </html>
