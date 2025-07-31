@@ -322,3 +322,32 @@ a {
 .download_btn:hover::after {
   transform: translateY(3px);
 }
+
+/* ===== Skills Section ===== */
+#skills {
+  background-color: var(--light);
+}
+
+.skills_container {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(150px, 1fr));
+  gap: 1.5rem;
+  max-width: 800px;
+  margin: 0 auto;
+}
+
+.skill_item {
+  background: white;
+  padding: 1.5rem;
+  border-radius: var(--border-radius);
+  text-align: center;
+  box-shadow: var(--shadow-sm);
+  transition: var(--transition);
+  border-left: 3px solid var(--primary);
+}
+
+.skill_item:hover {
+  transform: translateY(-5px);
+  box-shadow: var(--shadow-lg);
+  background: linear-gradient(135deg, white, #f5f9ff);
+}
