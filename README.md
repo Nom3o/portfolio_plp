@@ -18,7 +18,7 @@ A responsive personal portfolio website built with **HTML5 & CSS3** for the PLP 
 ✅ **Modern Layouts** - Flexbox & CSS Grid  
 ✅ **Interactive Elements** - Hover effects & transitions  
 ✅ **Contact Form** - Formspree integration  
-✅ **Downloadable CV** - PDF resource  
+✅ **Downloadable CV** - PDF resource (My CV in PDF format)  
 
 
 ## 🛠 Built With
@@ -33,3 +33,15 @@ A responsive personal portfolio website built with **HTML5 & CSS3** for the PLP 
 - [ ] Set up and implement CSS 
 - [ ] test the functionality of all features
 - [ ] Deploy to vercel
+
+## 🧑‍💻 Getting Started
+### Prerequisites
+- Web browser (Chrome/Firefox recommended)
+- Code editor (VS Code suggested)
+
+### Installation
+1. Clone the repository:
+   ```bash
+   https://github.com/Nom3o/portfolio_plp
+
+If You Like This Repo Feel Free To Give It A 🌟🌟🌟🌟🌟
