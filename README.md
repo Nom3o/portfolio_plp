@@ -47,7 +47,7 @@ portfolio_plp
 - [x] Create the HTML structure
 - [x] Set up and implement CSS 
 - [x] test the functionality of all features
-- [ ] Deploy to vercel
+- [x] Deploy to github pages
 
 ## 🧑‍💻 Getting Started
 ### Prerequisites
