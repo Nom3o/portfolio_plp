@@ -27,6 +27,21 @@ A responsive personal portfolio website built with **HTML5 & CSS3** for the PLP 
   <img src="https://img.shields.io/badge/HTML5-E34F26?style=for-the-badge&logo=html5&logoColor=white" alt="HTML5" title="Semantic markup structure">
   <img src="https://img.shields.io/badge/CSS3-1572B6?style=for-the-badge&logo=css3&logoColor=white" alt="CSS3" title="Styling and animations">
   
+## 📁 Project structure:
+
+```
+portfolio_plp
+    ├── README.md
+    ├── assets
+    │   ├── B3LL.png
+    │   ├── cv.pdf
+    │   ├── favicon.ico
+    │   ├── gizmo.png
+    │   └── rat.png
+    ├── index.html
+    └── style.css
+```
+
 ## 🛠 Development Phases
 - [x] create an informative README
 - [x] Create the HTML structure
@@ -44,4 +59,6 @@ A responsive personal portfolio website built with **HTML5 & CSS3** for the PLP 
    ```bash
    https://github.com/Nom3o/portfolio_plp
 
-If You Like This Repo Feel Free To Give It A 🌟🌟🌟🌟🌟
+
+
+#### If You Like This Repo Feel Free To Give It A 🌟 🌟 🌟 🌟 🌟
