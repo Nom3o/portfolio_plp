@@ -125,6 +125,88 @@ a {
   width: 100%;
 }
 
+/* Social Icons Positioning (like reference image) */
+.icons {
+  position: absolute;
+  bottom: -30px; /* Hanging below the image */
+  left: 50%;
+  transform: translateX(-50%);
+  display: flex;
+  gap: 25px;
+  z-index: 10;
+}
+
+.img_box {
+  position: relative; /* Anchor for absolute positioning */
+  margin-bottom: 40px; /* Space for hanging icons */
+}
+
+.social-icon {
+  width: 44px;
+  height: 44px;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: white;
+  font-size: 18px;
+  text-decoration: none;
+  box-shadow: 0 3px 10px rgba(0, 0, 0, 0.15);
+  transition: all 0.3s ease;
+  position: relative;
+}
+
+/* String effect */
+.social-icon::before {
+  content: '';
+  position: absolute;
+  top: -18px;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 1px;
+  height: 18px;
+  background: rgba(0, 0, 0, 0.15);
+  transition: all 0.3s ease;
+}
+
+/* Brand colors */
+.social-icon:nth-child(1) { background-color: #0077b5; } /* LinkedIn */
+.social-icon:nth-child(2) { background-color: #1da1f2; } /* Twitter */
+.social-icon:nth-child(3) { background-color: #333; }    /* GitHub */
+
+/* Hover effects */
+.social-icon:hover {
+  transform: translateY(-3px);
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
+}
+
+.social-icon:hover::before {
+  height: 22px;
+  background: rgba(0, 0, 0, 0.25);
+}
+
+/* Mobile responsiveness */
+@media (max-width: 768px) {
+  .icons {
+    gap: 20px;
+    bottom: -25px;
+  }
+  
+  .social-icon {
+    width: 40px;
+    height: 40px;
+    font-size: 16px;
+  }
+  
+  .social-icon::before {
+    height: 15px;
+    top: -15px;
+  }
+  
+  .social-icon:hover::before {
+    height: 18px;
+  }
+}
 
 /* ===== Hero Section ===== */
 .home {
