@@ -46,7 +46,7 @@ portfolio_plp
 - [x] create an informative README
 - [x] Create the HTML structure
 - [x] Set up and implement CSS 
-- [ ] test the functionality of all features
+- [x] test the functionality of all features
 - [ ] Deploy to vercel
 
 ## 🧑‍💻 Getting Started
