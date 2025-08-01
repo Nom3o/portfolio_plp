@@ -59,6 +59,6 @@ portfolio_plp
    ```bash
    https://github.com/Nom3o/portfolio_plp
 
-
-
+## Live Demo
+👉 **[See the Live Portfolio Here](https://nom3o.github.io/portfolio_plp/)** 👈
 #### If You Like This Repo Feel Free To Give It A 🌟 🌟 🌟 🌟 🌟
